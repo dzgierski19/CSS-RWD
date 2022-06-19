@@ -11,13 +11,15 @@ $color-two: #353b48;
 $color-three:#4cd137;
 $color-four: #e84118;
 $color-five: #0097e6;
+$font-text: 'League Gothic', sans-serif;
+$font-button: 'Signika', sans-serif;
+$transition: all 1s;
 
 body {
     margin: 0;
     font-size: 16px;
-    color: color-two;  /* czy to kolor czcionki czy tła? */
+    color: $color-two;  /* czy to kolor czcionki czy tła? */
     line-height: 1.7;
-
 }
 
 .container {
@@ -116,5 +118,40 @@ h2 {
 
 .page-title span {
     color: $color-four;
+}
+
+.btn {
+    display: inline-block; /* domyślny kolor przycisku to granatowy */
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-button;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%; 
+}
+
+.btn-one {
+    color: $color-four;
+    border-color: whitesmoke;
+    background: linear-gradient(-45deg, black, yellow);
+    background-image: linear-gradient(90deg,#ffffff 50%, transparent 50%);
+}
+
+.btn-one:hover {
+    background: black;
+    transition: $transition;
+}
+
+.btn:hover {
+    background-position: 0 100%;
+    color:white;
+    transition: $transition;
 }
 
