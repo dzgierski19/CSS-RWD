@@ -1,0 +1,120 @@
+/* Global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+$color-one: #fbc531;
+$color-two: #353b48;
+$color-three:#4cd137;
+$color-four: #e84118;
+$color-five: #0097e6;
+
+body {
+    margin: 0;
+    font-size: 16px;
+    color: color-two;  /* czy to kolor czcionki czy tła? */
+    line-height: 1.7;
+
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;   /* center horizontally */
+    padding: 0 20px; 
+}
+
+
+section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+/* Navigation */
+
+.navigation {
+    background-color: $color-five;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.navigation li {
+    position: relative;
+    margin-right: 36px;
+    display: inline-block;
+}
+
+.navigation a {
+    text-decoration: none; /* likwidacja koloru podświetlenia linków */
+    color: $color-two;
+}
+
+.navigation a:hover {
+    color: $color-three;   /* zmiana koloru po najechaniu na niego kursorem */
+   }
+
+.navigation li ul {
+    margin-bottom: 12px;
+    display: none;
+    position: absolute;        /* listy poziomują się względem li, bo jest ustawione position:relative */
+    background-color: $color-one;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px;
+}
+
+.navigation li:hover ul {
+    display: block;
+    text-align: center;     /* wycentrowanie tekstu */
+}
+
+.navigation ul li ul a {
+    color: $color-five;
+    display: block;         
+    padding: 0 24px;
+}
+
+.navigation ul li ul:hover a {
+    color: $color-three;
+}
+
+/* Splash */
+
+.splash {
+    background-color: $color-five;
+    color: $color-two;
+    min-height: 500px;
+    display: flex;
+}
+
+.splash-inner {
+    margin: auto;
+    max-width: 70%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 60px;
+    word-spacing: 24px;    /* odstęp między słowami */
+    line-height: 1.2;
+    font-weight: bold 800;
+}
+
+h2 {
+    margin: 24px 0;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.page-title span {
+    color: $color-four;
+}
+

@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Variables */
+body {
+  margin: 0;
+  font-size: 16px;
+  color: color-two;
+  /* czy to kolor czcionki czy tła? */
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  /* center horizontally */
+  padding: 0 20px;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+/* Navigation */
+.navigation {
+  background-color: #0097e6;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navigation ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.navigation li {
+  position: relative;
+  margin-right: 36px;
+  display: inline-block;
+}
+
+.navigation a {
+  text-decoration: none;
+  /* likwidacja koloru podświetlenia linków */
+  color: #353b48;
+}
+
+.navigation a:hover {
+  color: #4cd137;
+  /* zmiana koloru po najechaniu na niego kursorem */
+}
+
+.navigation li ul {
+  margin-bottom: 12px;
+  display: none;
+  position: absolute;
+  /* listy poziomują się względem li, bo jest ustawione position:relative */
+  background-color: #fbc531;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px;
+}
+
+.navigation li:hover ul {
+  display: block;
+  text-align: center;
+  /* wycentrowanie tekstu */
+}
+
+.navigation ul li ul a {
+  color: #0097e6;
+  display: block;
+  padding: 0 24px;
+}
+
+.navigation ul li ul:hover a {
+  color: #4cd137;
+}
+
+/* Splash */
+.splash {
+  background-color: #0097e6;
+  color: #353b48;
+  min-height: 500px;
+  display: flex;
+}
+
+.splash-inner {
+  margin: auto;
+  max-width: 70%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 60px;
+  word-spacing: 24px;
+  /* odstęp między słowami */
+  line-height: 1.2;
+  font-weight: bold 800;
+}
+
+h2 {
+  margin: 24px 0;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.page-title span {
+  color: #e84118;
+}
+/*# sourceMappingURL=style.css.map */
