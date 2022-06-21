@@ -38,12 +38,6 @@ section {
   list-style-type: none;
 }
 
-.navigation li {
-  position: relative;
-  margin-right: 36px;
-  display: inline-block;
-}
-
 .navigation a {
   text-decoration: none;
   /* likwidacja koloru podświetlenia linków */
@@ -53,6 +47,12 @@ section {
 .navigation a:hover {
   color: #4cd137;
   /* zmiana koloru po najechaniu na niego kursorem */
+}
+
+.navigation li {
+  position: relative;
+  margin-right: 36px;
+  display: inline-block;
 }
 
 .navigation li ul {
@@ -150,7 +150,7 @@ section {
   transition: all 1s;
 }
 
-/* See our sevices section */
+/* The most popular tokens section */
 .section-title {
   text-align: left;
   font-family: "League Gothic", sans-serif;
@@ -207,6 +207,56 @@ h1.text-inside-box {
 
 .box-text:first-of-type {
   font-weight: bolder;
+}
+
+/* TOKENS section */
+[class^="box-"] {
+  position: relative;
+}
+
+.box-row {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 96px;
+  align-items: center;
+}
+
+.box-2 {
+  flex: 0 0 50%;
+  margin-bottom: 96px;
+}
+
+.box-image {
+  position: absolute;
+  height: 100%;
+}
+
+.box-image img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  float: left;
+}
+
+.box-text {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.btn-five {
+  margin: 36px 0;
+  padding: 0;
+  border: none;
+}
+
+.box-image:hover::after {
+  opacity: 0.8;
+  margin: 0 20px 20px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
