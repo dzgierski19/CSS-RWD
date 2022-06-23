@@ -210,10 +210,6 @@ h1.text-inside-box {
 }
 
 /* TOKENS section */
-[class^="box-"] {
-  position: relative;
-}
-
 .box-row {
   justify-content: space-between;
   display: flex;
@@ -225,11 +221,6 @@ h1.text-inside-box {
 .box-2 {
   flex: 0 0 50%;
   margin-bottom: 96px;
-}
-
-.box-image {
-  position: absolute;
-  height: 100%;
 }
 
 .box-image img {
@@ -254,8 +245,14 @@ h1.text-inside-box {
   border: none;
 }
 
-.box-image:hover::after {
-  opacity: 0.8;
-  margin: 0 20px 20px 0;
+.box-image {
+  position: relative;
+}
+
+.box-image::after {
+  opacity: 0.3;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
