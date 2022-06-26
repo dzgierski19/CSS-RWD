@@ -254,12 +254,74 @@ h1.text-inside-box {
 }
 
 .box-image {
+    height: 100%;
     position: relative;
 }
 
 .box-image::after{
+    content: '';
+    height: 250px;
+    width: 200px;
     opacity: 0.3;
     position: absolute;
     top: 20px;
     left: 20px;
+    background-color: gray;
 }
+
+
+/* Contact Section */
+
+.contact {
+    background-color: $color-five;
+}
+
+form {
+    flex: 2 0 0;
+    padding-right: 96px;
+}
+
+.contact-data {
+    flex: 1 0 0;
+}
+
+.contact-data h2 {
+    color: white;
+    font-size: 20px;
+}
+
+
+input {
+    border:none;
+    border-bottom: solid white 2px;
+    background: inherit;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: red;
+    width: 100%;
+    font-size: 20px;
+}
+
+::placeholder {
+    color: white;
+}
+
+textarea {
+    background: inherit;
+    width: 100%;
+    border: none;
+    color: red;
+    font-size: 20px;
+}
+
+.btn-six {
+    color: $color-four;
+    border-color: whitesmoke;
+    background: linear-gradient(-45deg, black, white);
+    color: white;
+    margin-bottom: 15px;
+    border: none;
+}
+
+/* footer section */
