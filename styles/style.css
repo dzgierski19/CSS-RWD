@@ -243,6 +243,7 @@ h1.text-inside-box {
   margin: 36px 0;
   padding: 0;
   border: none;
+  color: red;
 }
 
 .box-image {
@@ -339,5 +340,36 @@ footer > ul > li > a > i {
 footer > ul > li > a > i:hover {
   color: green;
   transform: scale(1.2);
+}
+
+/* Media */
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  .box-image img {
+    height: 150px;
+    max-width: 100%;
+  }
+  .box-text {
+    max-width: 100%;
+  }
+  .box-image::after {
+    height: 150px;
+    max-width: 100%;
+  }
+  .box-row {
+    flex-direction: column;
+  }
+  div.box.box-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-data {
+    margin-top: 30px;
+  }
+  h1.page-title {
+    font-size: 48px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
