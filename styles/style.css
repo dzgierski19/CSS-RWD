@@ -335,4 +335,9 @@ footer > ul > li > a > i {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+footer > ul > li > a > i:hover {
+  color: green;
+  transform: scale(1.2);
+}
 /*# sourceMappingURL=style.css.map */
